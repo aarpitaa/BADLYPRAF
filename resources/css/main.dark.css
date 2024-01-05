@@ -1,0 +1,136 @@
+/* When dark-mode class is selected, apply the following styles */
+.dark-mode {
+    background-color: black;
+}
+
+.dark-mode nav {
+    background-color: black;
+    border-bottom: 4px solid white;
+}
+
+.dark-mode nav a,
+.dark-mode input[type="submit"] {
+    border-color: white;
+    color: white;
+    background-color: black;
+}
+
+.dark-mode nav a:hover,
+.dark-mode input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .title,
+.dark-mode .sub-title,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode .about, .dark-mode .services li {
+    color: white;
+}
+
+.dark-mode form p {
+    color: white;
+}
+
+.dark-mode img {
+    border-color: white;
+}
+
+.dark-mode .text-box {
+    background-color: black;
+    border-color: white;
+}
+
+.dark-mode .form-container {
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.dark-mode .video-container {
+    border-color: white;
+}
+
+.dark-mode .testimonial {
+    border-color: white;
+}
+
+.dark-mode em {
+    color: whitesmoke;
+}
+
+.dark-mode strong {
+    color: white;
+}
+
+.dark-mode .slider {
+    background-color: white;
+}
+
+.dark-mode .slider:before {
+    background-color: black;
+}
+
+
+.dark-mode .theme-toggle {
+    color: white;
+}
+
+.dark-mode .position-off {
+    color: black;
+}
+
+.dark-mode .position-on {
+    color: white;
+}
+
+.dark-mode th{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: white;
+}
+
+.dark-mode .delete-button {
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.dark-mode .delete-button:hover {
+    color: #EEEEEE;
+}
+
+.dark-mode #sale-form {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.dark-mode .sale-btns {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.dark-mode .sale-btns:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.dark-mode #sale-confirmation {
+    color: #FFFFFF;
+    background-color: #000000;
+}

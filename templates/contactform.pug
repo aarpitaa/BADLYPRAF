@@ -1,0 +1,91 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title  Contact Us 
+  link(rel='stylesheet' type='text/css' href='/css/main.css')
+  link(rel='stylesheet' type='text/css' href='/css/main.dark.css')
+nav.nav
+  ul
+    li
+      a(href='/main') Home
+    li
+      a(href='/contact') Contact
+    li
+      a(href='/testimonies') Testimonies
+    li
+      a(href='/admin/contactlog') Contact Log
+    li.theme-toggle
+      | Dark Theme 
+      label.switch
+        input#theme-switcher(type='checkbox')
+        span.slider
+          span.position-off OFF
+          span.position-on ON
+h1 Contact Us
+.form-container
+  form(action='/contact' method='POST')
+    label(for='name')
+      span *
+      | Name:
+    input#name(type='text' name='name' required='')
+    br
+    br
+    label(for='email')
+      span *
+      | Email:
+    input#email(type='email' name='email' required='')
+    br
+    br
+    label(for='date') Date To Be Shipped On:
+    input#date(type='date' name='date')
+    br
+    br
+    label(for='dropdown') Item:
+    select#dropdown(name='dropdown')
+      option(value='UltraHighRise90sJeans') Ultra High Rise 90s Straight Leg Jeans
+      option(value='CowlNeckSatinDressApricot') Cowl Neck Satin Dress (Apricot)
+      option(value='OversizedBoyfriendBlazerCharcoal') Oversized Boyfriend Blazer (Charcoal)
+      option(value='BeltedTrenchCoatCamel') Belted Trench Coat (Camel)
+      option(value='FloralPrintMaxiDressNavyBlue') Floral Print Maxi Dress (Navy Blue)
+      option(value='MockNeckRibbedSweaterOlive') Mock Neck Ribbed Sweater (Olive)
+      option(value='ButtonDownCorduroyShirtBurntOrange') Button Down Corduroy Shirt (Burnt Orange)
+      option(value='HighWaistedPaperbagTrousersBlack') High-Waisted Paperbag Trousers (Black)
+      option(value='VeganLeatherBikerJacket') Vegan Leather Biker Jacket
+      option(value='PleatedMidiSkirtBurgundy') Pleated Midi Skirt (Burgundy)
+      option(value='ColdShoulderRuffleTopWhite') Cold Shoulder Ruffle Top (White)
+      option(value='AthleticFitPerformanceTeeGray') Athletic Fit Performance Tee (Gray)
+      option(value='DistressedDenimJacketLightWash') Distressed Denim Jacket (Light Wash)
+      option(value='AsymmetricalHemWrapDressCerulean') Asymmetrical Hem Wrap Dress (Cerulean)
+      option(value='BandeauBikiniSetTropicalPrint') Bandeau Bikini Set (Tropical Print)
+      option(value='VNeckCashmereSweaterDustyPink') V-Neck Cashmere Sweater (Dusty Pink)
+      option(value='StripedLinenWideLegPants') Striped Linen Wide Leg Pants
+      option(value='RuchedBodyconMiniDressRed') Ruched Bodycon Mini Dress (Red)
+      option(value='EmbroideredBohoPeasantBlouse') Embroidered Boho Peasant Blouse
+      option(value='HighRiseBootCutDenimDarkWash') High Rise Boot Cut Denim (Dark Wash)
+      option(value='SheerLaceBodysuitBlack') Sheer Lace Bodysuit (Black)
+      option(value='BalloonSleeveKnitCardiganTaupe') Balloon Sleeve Knit Cardigan (Taupe)
+      option(value='SportsBraAbstractPrint') Sports Bra (Abstract Print)
+      option(value='TailoredSingleBreastedSuitNavy') Tailored Single-Breasted Suit (Navy)
+      option(value='SmockedWaistPalazzoPantsTeal') Smocked Waist Palazzo Pants (Teal)
+      option(value='CrochetLaceTrimCamisoleBeige') Crochet Lace Trim Camisole (Beige)
+      option(value='FauxFurHoodedParkaOliveGreen') Faux Fur Hooded Parka (Olive Green)
+      option(value='AthleticJoggersSideStripeHeatherGray') Athletic Joggers with Side Stripe (Heather Gray)
+      option(value='OffTheShoulderRuchedBlouseLilac') Off-the-Shoulder Ruched Blouse (Lilac)
+      option(value='ZipUpTeddyBearJacketBrown') Zip-Up Teddy Bear Jacket (Brown)
+    br
+    br
+    label(for='checkbox')  I agree to the terms and conditions. 
+    input#checkbox(type='checkbox' name='checkbox')
+    br
+    br
+    .pricing
+      p#itemPrice Item Price: $0.00
+      p#discountApplied Discount Applied: 0%
+      p#priceEstimate Total After Discount: $0.00
+    input(type='submit' value='Submit')
+    p
+      span *
+      em Required fields
+script(src='/js/main.js')
+script(src='/js/contact.js')

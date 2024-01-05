@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title  Badlypraf 
+  link(rel='stylesheet' type='text/css' href='/css/main.css')
+  link(rel='stylesheet' type='text/css' href='/css/main.dark.css')  
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Young+Serif&display=swap')
+nav
+  ul
+    li
+      a(href='/') Home
+    li
+      a(href='/contact') Contact
+    li
+      a(href='/testimonies') Testimonies
+    li
+      a(href='/admin/contactlog') Contact Log
+    li.theme-toggle
+      | Dark Theme 
+      label.switch
+        input#theme-switcher(type='checkbox')
+        span.slider
+          span.position-off OFF
+          span.position-on ON
+#sales-banner(style='display: none;')
+  // Sale message gets inserted here dynamically by the main.js script
+h1.title  B A D L Y P R A F 
+h2.sub-title  Mischievously Chic: Dress Badly, Feel Fabulous! 
+img(src='/images/wardrobe.jpeg' alt='wardrobe image' width='500' height='750')
+.text-box
+  h3 Discover Our Magic Wardrobe
+  ol.services
+    li
+      strong Enchanted Outfits:
+      |  Unleash your inner whimsy with our one-of-a-kind clothing that sparkles with imagination.
+    li
+      strong Fantasy Accessories:
+      |  Enhance your style with mystical adornments that turn heads and steal hearts.
+    li
+      strong Dreamy Tailoring:
+      |  We create bespoke dreams that fit you like they&apos;re woven from your fantasies.
+    li
+      strong Mythical Makeovers:
+      |  Transform yourself into a storybook character, and become a living legend.
+  h3.about  Our Tale of Magic and Wonder 
+  p.about
+    | Step into a realm where fashion is an art form, and ordinary attire is forbidden. At 
+    em Badlypraf
+    | , we believe in the extraordinary. Our story began with a dream and a sprinkle of stardust, and now we invite you to join us on a journey to make the world a more enchanting place.
+  p.about
+    | Suspended between the real and the surreal, we bring stories to life, and fantasies to your wardrobe. Every thread, every stitch, and every accessory we craft is an invitation to create your own fairy tale. Welcome to 
+    em Badlypraf
+    | , where reality and fantasy become one.
+script(src='/js/main.js')

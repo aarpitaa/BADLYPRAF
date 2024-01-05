@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Form Submission Successful
+    link(rel='stylesheet' type='text/css' href='/css/main.css')
+    link(rel='stylesheet' type='text/css' href='/css/main.dark.css')
+  body
+    header
+      nav
+        ul
+          li: a(href='/main') Home
+          li: a(href='/contact') Contact
+          li: a(href='/testimonies') Testimonies
+          li: a(href='/admin/contactlog') Contact Log
+          li.theme-toggle
+            | Dark Theme 
+            label.switch
+              input#theme-switcher(type='checkbox')
+              span.slider
+                span.position-off OFF
+                span.position-on ON
+
+    main
+      h1 Thank you!
+      p Your form submission has been received.
+
+    script(src='/js/main.js')

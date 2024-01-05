@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Contact Log
+    link(rel='stylesheet' type='text/css' href='/css/main.css')
+    link(rel='stylesheet' type='text/css' href='/css/main.dark.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css')
+  body
+    nav
+        ul
+            li
+                a(href='/main') Home
+            li
+                a(href='/contact') Contact
+            li
+                a(href='/testimonies') Testimonies
+            li
+                a(href='/admin/contactlog') Contact Log
+        .theme-toggle
+            | Dark Theme 
+            label.switch
+                input#theme-switcher(type='checkbox')
+                span.slider
+                    span.position-off OFF
+                    span.position-on ON
+
+    // Sale management form and confirmation message
+    #sale-management
+      form#sale-form
+        div
+          p  Sale text: 
+          input#saleInput(type='text' placeholder='Enter sale message')
+        div
+          button#set-sale-btn.sale-btns(type='button' onclick='setSale()') Set Sale
+          button#del-sale-btn.sale-btns(type='button' onclick='deleteSale()') End Sale
+      #sale-confirmation
+                    
+
+    h1 Contact Log
+
+    table
+      tr
+        th Name
+        th Email
+        th Date
+        th Item Selected
+        th ToS Agreed
+        th Time Until Date
+        th Action
+      each contact in contacts
+        tr(id=`contact-${contact.id}`)
+          td= contact.name.replace("<", "&lt;")
+          td: a(href=`mailto:${contact.email.replace("<", "&lt;")}`)= contact.email
+          td= contact.date
+          td= contact.dropdown.replace("<", "&lt;")
+          td= contact.checkbox ? 'Yes' : 'No'
+          td.time-until
+          td
+            span.contact-id(style='display: none')= contact.id
+            i.fas.fa-trash-alt.delete-button(data-contact-id=`${contact.id}` onclick="deleteContact(this)")
+
+    script(src='/js/main.js')
+    script(src='/js/table.js')

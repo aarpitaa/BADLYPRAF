@@ -1,0 +1,373 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #F8BBD0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #F06292;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style the navigation links as buttons */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #F8BBD0;
+    border-radius: 20px;
+    color: #F8BBD0;
+    background-color: #F06292;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Change the background color of the buttons on hover */
+nav a:hover {
+    background-color: #EC407A;
+}
+
+/* Style for the sale banner on the contact log page */
+#sales-banner {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    display: none; 
+}
+
+/* Styling for tiltles and subtitles across all pages */
+.title, .sub-title {
+    font-family: 'Young Serif', sans-serif;
+}
+
+/* Style for the main heading */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the subheading */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the image */
+img {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #F06292;
+    border-radius: 10px;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+/* Style the text box below the image */
+.text-box {
+    background-color: #FCE4EC; /* Set the background color */
+    text-align: center;
+    width: 50%; /* Set the width to 50% of the screen */
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #F06292; /* Add a border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.services {
+    list-style-position: inside;
+}
+
+.services li {
+    padding: 5px;
+}
+
+/* Style the italicized text within the text box */
+em {
+    color: #EC407A; /* Change the color for emphasis */
+}
+
+/* Style the emboldened text within the text box */
+strong {
+    color: #D81B60; /* Change the color for emphasis */
+}
+
+/* Style the product and service list */
+ol {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style the company information */
+h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-container {
+    background-color: #F8BBD0;
+    border: 1px solid #F06292;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 25%;
+}
+
+form {
+    text-align: center;
+}
+
+form span {
+    color: #D81B60;
+}
+
+form p {
+    font-size: 0.7rem;
+}
+
+form div {
+    padding-bottom: 10px;
+}
+
+form div p {
+    font-size: 14px;
+}
+
+nav a, input[type="submit"] {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #F8BBD0;
+    border-radius: 20px;
+    color: #F8BBD0;
+    background-color: #F06292;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Change the background color of the buttons on hover */
+nav a:hover,
+input[type="submit"]:hover {
+    background-color: #EC407A;
+}
+
+/* Center the embedded YouTube video */
+.video-container {
+    border: 5px solid #F06292;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 75%;
+    padding: 20px;
+}
+
+/* .video-container iframe {
+    border: none;
+    border-radius: 0;
+    display: block;
+} */
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 75%;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.testimonial {
+    width: calc(50% - 20px); /* Each testimonial takes up half the screen width with some spacing */
+    margin-bottom: 20px;
+    border: 1px solid #F06292;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.review-body {
+    margin-bottom: 10px;
+}
+
+.reviewer-name {
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+    color: #F06292;
+}
+
+
+/* Dark Mode Toggle */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #F8BBD0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    padding: 2px;
+}
+
+.switch input {
+    display: none; /* Hide the checkbox input */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FDEDEC;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 34px;
+    left: 1px;
+    background-color: #F48FB1;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.position-off, .position-on {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;                        
+    font-size: 12px;
+    z-index: 1;
+}
+
+.position-off {
+    color: white;
+}
+
+.position-on {
+    color: #F48FB1;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(28px);
+}
+
+/* Style for the sale form */
+#sale-form {
+    font-size: 0.7rem;
+    background-color: #F8BBD0;
+    border: 1px solid #F06292;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-btns {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #F8BBD0;
+    border-radius: 20px;
+    color: #F8BBD0;
+    background-color: #F06292;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.sale-btns:hover {
+    background-color: #EC407A;
+    cursor: pointer;
+}
+
+#sale-confirmation {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #F8BBD0;
+    background-color: #F06292;
+}
+
+/* Style for the table */
+table {
+width: 75%;
+margin: 0 auto;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #F06292;
+    color: #F8BBD0;
+}
+
+tr:nth-child(odd) {
+    background-color: #F48FB1;
+}
+
+tr:nth-child(even) {
+    background-color: #F8BBD0;
+}
+
+.delete-button {
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #F1948A;
+}
